@@ -1,0 +1,136 @@
+body{
+	color: #000000;
+	background-color: #444444;
+}
+
+.container {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 45px;
+	width: 550px;
+	margin: 100px auto;
+	padding: 25px;
+	border: 20px solid #e1e1e1;
+	background-color: #ccc;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 10px; 
+	position: relative;
+	left: 0px;
+	top: 100px;
+} 
+
+.trans {
+	opacity: 0;
+}
+
+	.moon {
+		position: absolute;
+		top: 50px;
+	}	
+
+	.cloud {
+		width: 250px;
+		height:200px;
+		position:absolute;
+		background: url(images/back_cloud.png) 0 0 no-repeat;
+	}
+	
+	.fcloud01 {
+		top:100px;
+		z-index:100;
+    	animation: drift 25s linear infinite;
+
+	}
+			
+	.fcloud02 {
+		top:50px;
+		z-index: 200;	
+		animation: drift 35s 10s linear infinite backwards;			 
+	}
+
+	.fcloud03 {
+		top:400px;
+		z-index: 200;	
+		animation: drift 35s 5s linear infinite backwards;			 
+	}
+
+@keyframes drift {
+	from{transform: translateX(-255px);}
+	to {transform: translateX(1350px);}
+}
+
+.animate {
+	color: #000000;
+	background-color: #ccc;
+  	border: none;
+  	color: black;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+  	border-radius: 10px; 
+  	font-family: "Lucida Console", Monaco, monospace;
+  	position: relative;
+	left: 450px;
+	top: 50px;
+
+}
+
+.animate2 {
+	background-color: #ccc;
+  	border: none;
+  	color: black;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+  	border-radius: 10px; 
+  	font-family: "Lucida Console", Monaco, monospace;
+	position: relative;
+	left: 500px;
+	top: 50px;
+}
+
+ 	.sun {
+		position: absolute;
+		top: 0px;
+		width: 500px;
+	}	
+
+	.cloud2 {
+		width: 250px;
+		height:200px;
+		position:absolute;
+		background: url(images/front_cloud.png) 0 0 no-repeat;
+	}
+	
+	.bcloud01 {
+		top:100px;
+		z-index:100;
+    	animation: drift 25s linear infinite;
+
+	}
+			
+	.bcloud02 {
+		top:50px;
+		z-index: 200;	
+		animation: drift 35s 10s linear infinite backwards;			 
+	}
+
+	.bcloud03 {
+		top:400px;
+		z-index: 200;	
+		animation: drift 35s 5s linear infinite backwards;			 
+	}
+
+@keyframes drift {
+	from{transform: translateX(-255px);}
+	to {transform: translateX(1350px);}
+}
+}
